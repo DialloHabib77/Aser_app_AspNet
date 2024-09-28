@@ -1,0 +1,44 @@
+﻿@model aser_electrification.Models.Departement
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="card">
+                <div class="card-header text-white bg-purple-light">Gestion des Départements</div>
+                <div class="card-body">
+                    <h4 class="mb-4">Formulaire de Création d'un Département</h4>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Nom_Departement" class="control-label">Nom du Département</label>
+                        <input asp-for="Nom_Departement" class="form-control" placeholder="Entrez le nom du département" />
+                        <span asp-validation-for="Nom_Departement" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ID_Region" class="control-label">Sélectionner la Région</label>
+                        <select asp-for="ID_Region" class="form-control" asp-items="ViewBag.Region"></select>
+                        <span asp-validation-for="ID_Region" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <button type="submit" value="Create" class="btn btn-primary"><i class="fas fa-save"></i> Créer</button>
+
+                        <a asp-action="Index" class="btn btn-danger"><i class="fas fa-backspace"></i> Retourner à la liste</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

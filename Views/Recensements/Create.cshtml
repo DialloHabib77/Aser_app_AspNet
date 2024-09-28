@@ -1,0 +1,49 @@
+﻿@model aser_electrification.Models.Recensement
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="card">
+                <div class="card-header text-white bg-purple-light">Gestion des Recensements</div>
+                <div class="card-body">
+                    <h4 class="mb-4">Formulaire de Création de Recensement</h4>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Date_Recensement" class="control-label">Date de Recensement</label>
+                        <input asp-for="Date_Recensement" class="form-control" placeholder="Sélectionner une date" type="date" />
+                        <span asp-validation-for="Date_Recensement" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Nombre_Menages_Electrifies" class="control-label">Nombre de Ménages Électrifiés</label>
+                        <input asp-for="Nombre_Menages_Electrifies" class="form-control" placeholder="Entrez le nombre de ménages électrifiés" />
+                        <span asp-validation-for="Nombre_Menages_Electrifies" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ID_Village" class="control-label">Sélectionner le Village</label>
+                        <select asp-for="ID_Village" class="form-control" asp-items="ViewBag.Village"></select>
+                        <span asp-validation-for="ID_Village" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <input type="submit" value="Créer" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-danger"><i class="fas fa-backspace"></i> Retourner à la liste</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,72 @@
+﻿@model aser_electrification.Models.Village
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="card">
+                <div class="card-header text-white bg-purple-light">Gestion des Villages</div>
+                <div class="card-body">
+                    <h4 class="mb-4">Formulaire de Création d'un Village</h4>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Nom_Village" class="control-label">Nom du Village</label>
+                        <input asp-for="Nom_Village" class="form-control" placeholder="Entrez le nom du village" />
+                        <span asp-validation-for="Nom_Village" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Identifiant_Village" class="control-label">Identifiant du Village</label>
+                        <input asp-for="Identifiant_Village" class="form-control" placeholder="Entrez l'identifiant du village" />
+                        <span asp-validation-for="Identifiant_Village" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Longitude" class="control-label">Longitude</label>
+                        <input asp-for="Longitude" class="form-control" placeholder="Entrez la longitude" />
+                        <span asp-validation-for="Longitude" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Latitude" class="control-label">Latitude</label>
+                        <input asp-for="Latitude" class="form-control" placeholder="Entrez la latitude" />
+                        <span asp-validation-for="Latitude" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Nombre_Menages" class="control-label">Nombre de Ménages</label>
+                        <input asp-for="Nombre_Menages" class="form-control" placeholder="Entrez le nombre de ménages" />
+                        <span asp-validation-for="Nombre_Menages" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" asp-for="Statut_Electrification" />
+                        <label class="form-check-label" asp-for="Statut_Electrification">@Html.DisplayNameFor(model => model.Statut_Electrification)</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ID_Commune" class="control-label">Sélectionner la Commune</label>
+                        <select asp-for="ID_Commune" class="form-control" asp-items="ViewBag.Commune"></select>
+                        <span asp-validation-for="ID_Commune" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <input type="submit" value="Créer" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-danger"><i class="fas fa-backspace"></i> Retourner à la liste</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

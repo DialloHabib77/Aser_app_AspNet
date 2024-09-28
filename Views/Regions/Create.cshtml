@@ -1,0 +1,44 @@
+﻿@model aser_electrification.Models.Region
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-white bg-purple-light">Gestion des Régions</div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <div class="d-flex mb-2">
+                                    <h5 class="card-title flex-grow-1">Formulaire de Création d'une Nouvelle Région</h5>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Nom_Region" class="control-label">Nom de la Région</label>
+                                    <input asp-for="Nom_Region" class="form-control mt-2" placeholder="Entrez le nom de la région" />
+                                    <span asp-validation-for="Nom_Region" class="text-danger"></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-4">
+                                    <button type="submit" value="Create" class="btn btn-primary"><i class="fas fa-save"></i> Créer</button>
+                                    <a asp-action="Index" class="btn btn-danger"><i class="fas fa-backspace"></i> Retourner à la liste</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

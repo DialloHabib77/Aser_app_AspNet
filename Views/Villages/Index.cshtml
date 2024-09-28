@@ -1,0 +1,56 @@
+﻿@model IEnumerable<aser_electrification.Models.Village>
+
+@{
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurentPage;
+    }
+}
+
+<div>
+    <div class="d-flex mb-2">
+        <h5 class="card-title flex-grow-1">Liste des Villages</h5>
+        <div class="d-flex">
+            <a class="btn btn-success btn-sm" asp-action="Create"><i class="fas fa-user-plus"></i> Ajouter un nouveau village</a>
+            <input disabled type="text" class="form-control ms-2" placeholder="Rechercher..." />
+        </div>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Nom du village</th>
+                <th class="text-center">Identifiant du village</th>
+                <th class="text-center">Longitude</th>
+                <th class="text-center">Latitude</th>
+                <th class="text-center">Nombre_Menages</th>
+                <th class="text-center">Statut d'electrification</th>
+                <th class="text-center">Nom de la Commune</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Nom_Village)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Identifiant_Village)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Longitude)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Latitude)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Nombre_Menages)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Statut_Electrification)</td>
+                    <td class="text-center">@Html.DisplayFor(modelItem => item.Commune.Nom_Commune)</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.ID_Village" class="btn btn-sm btn-warning me-1"><i class="fas fa-edit"></i> Modifier</a>
+                        <a asp-action="Details" asp-route-id="@item.ID_Village" class="btn btn-sm btn-info me-1"><i class="fas fa-info-circle"></i> Détails</a>
+                        <a asp-action="Delete" asp-route-id="@item.ID_Village" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Supprimer</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <partial name="_pagerVillage" model="@pager" />
+</div>

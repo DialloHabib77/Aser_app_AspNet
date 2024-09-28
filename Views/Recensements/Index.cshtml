@@ -1,0 +1,134 @@
+﻿@model IEnumerable<aser_electrification.Models.Recensement>
+
+@{
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurentPage;
+    }
+}
+
+<div>
+    <div class="d-flex mb-2">
+        <h5 class="card-title flex-grow-1">Liste des recensements</h5>
+        <div class="d-flex">
+            <a class="btn btn-success btn-sm" asp-action="Create"><i class="fas fa-user-plus"></i>Ajouter un nouveau recensement</a>
+        </div>
+    </div>
+
+    <!-- Filtre de recherche par région, département et commune -->
+    <form method="get" asp-action="Index">
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <label for="regionId">Région:</label>
+                <select id="regionId" name="regionId" class="form-control" asp-items="ViewBag.Regions">
+                    <option value="">Toutes les régions</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="departementId">Département:</label>
+                <select id="departementId" name="departementId" class="form-control" asp-items="ViewBag.Departements">
+                    <option value="">Tous les départements</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="communeId">Commune:</label>
+                <select id="communeId" name="communeId" class="form-control" asp-items="ViewBag.Communes">
+                    <option value="">Toutes les communes</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary mt-4">Filtrer</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Table d'affichage des recensements -->
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                
+                <th class="text-center">Village</th>
+                <th class="text-center">Commune</th>
+                <th class="text-center">Département</th>
+                <th class="text-center">Région</th>
+                <th class="text-center">Date de recensement</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                       
+                        <td class="text-center">@item.Village.Nom_Village</td>
+                        <td class="text-center">@item.Village.Commune.Nom_Commune</td>
+                        <td class="text-center">@item.Village.Commune.Departement.Nom_Departement</td>
+                        <td class="text-center">@item.Village.Commune.Departement.Region.Nom_Region</td>
+                        <td class="text-center">@item.Date_Recensement</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.ID_Recensement" class="btn btn-sm btn-warning me-2"><i class="fas fa-edit"></i> Modifier</a>
+                            <a asp-action="Details" asp-route-id="@item.ID_Recensement" class="btn btn-sm btn-info me-2"><i class="fas fa-info-circle"></i> Détails</a>
+                            <a asp-action="Delete" asp-route-id="@item.ID_Recensement" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Supprimer</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center">Aucun recensement trouvé</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Pagination partial view -->
+    <partial name="_pagerRecens" model="@pager" />
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#regionId').change(function () {
+                var regionId = $(this).val();
+                if (regionId) {
+                    $.getJSON('/Recensements/GetDepartements', { regionId: regionId }, function (data) {
+                        $('#departementId').empty();
+                        $('#departementId').append($('<option></option>').val('').text('Tous les départements'));
+                        $.each(data, function (index, item) {
+                            $('#departementId').append($('<option></option>').val(item.id).text(item.name));
+                        });
+                    });
+                } else {
+                    $('#departementId').empty();
+                    $('#departementId').append($('<option></option>').val('').text('Tous les départements'));
+                }
+                $('#communeId').empty();
+                $('#communeId').append($('<option></option>').val('').text('Toutes les communes'));
+            });
+
+            $('#departementId').change(function () {
+                var departementId = $(this).val();
+                if (departementId) {
+                    $.getJSON('/Recensements/GetCommunes', { departementId: departementId }, function (data) {
+                        $('#communeId').empty();
+                        $('#communeId').append($('<option></option>').val('').text('Toutes les communes'));
+                        $.each(data, function (index, item) {
+                            $('#communeId').append($('<option></option>').val(item.id).text(item.name));
+                        });
+                    });
+                } else {
+                    $('#communeId').empty();
+                    $('#communeId').append($('<option></option>').val('').text('Toutes les communes'));
+                }
+            });
+        });
+    </script>
+}

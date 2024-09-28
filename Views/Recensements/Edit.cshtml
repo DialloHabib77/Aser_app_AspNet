@@ -1,0 +1,59 @@
+﻿@model aser_electrification.Models.Recensement
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header text-black bg-purple-light text-center">Gestion des recensements</div>
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <div class="d-flex mb-2">
+                                    <h5 class="card-title flex-grow-1 text-center">Formulaire de modification du recensement</h5>
+                                </div>
+
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="ID_Recensement" />
+
+                                <div class="col-12">
+                                    <label asp-for="Date_Recensement" class="control-label">Date du Recensement</label>
+                                    <input asp-for="Date_Recensement" class="form-control mt-2" type="date" />
+                                    <span asp-validation-for="Date_Recensement" class="text-danger"></span>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <label asp-for="Nombre_Menages_Electrifies" class="control-label">Nombre de Menages Electrifiés</label>
+                                    <input asp-for="Nombre_Menages_Electrifies" class="form-control mt-2" type="number" />
+                                    <span asp-validation-for="Nombre_Menages_Electrifies" class="text-danger"></span>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <label asp-for="ID_Village" class="control-label">Village</label>
+                                    <select asp-for="ID_Village" class="form-control mt-2" asp-items="ViewBag.Village"></select>
+                                    <span asp-validation-for="ID_Village" class="text-danger"></span>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <button type="submit" value="Save" class="btn btn-primary"><i class="fas fa-save"></i> Enregistrer</button>
+                                    <a asp-action="Index" class="btn btn-danger ms-2"><i class="fas fa-backspace"></i> Retourner à la liste</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

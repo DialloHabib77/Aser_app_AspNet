@@ -1,0 +1,46 @@
+﻿@model aser_electrification.Models.Recensement
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header text-black bg-purple-light text-center">Détails du Recensement</div>
+            <div class="card-body">
+                <h4 class="card-title">Informations sur le Recensement</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Date_Recensement)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Date_Recensement)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Nombre_Menages_Electrifies)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Nombre_Menages_Electrifies)
+                    </dd>
+                    <dt class="col-sm-4">
+                        @Html.DisplayNameFor(model => model.Village)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Village.Identifiant_Village)
+                    </dd>
+                </dl>
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Edit" asp-route-id="@Model?.ID_Recensement" class="btn btn-warning">
+                        <i class="fas fa-edit"></i> Modifier
+                    </a>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-backspace"></i> Retourner à la liste
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+﻿@model aser_electrification.Controllers.StatistiquesViewModel
+
+@{
+    ViewBag.Title = "Statistiques d'électrification";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Statistiques globales</h3>
+        <table class="table table-bordered">
+            <tr>
+                <th>Taux d'accès global par ménage</th>
+                <td>@Model.TauxAccesGlobalParMenage.ToString("F2")%</td>
+            </tr>
+            <tr>
+                <th>Taux de couverture global par village</th>
+                <td>@Model.TauxCouvertureGlobalParVillage.ToString("F2")%</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="chartGlobal" style="width: 100%; height: 400px;"></div>
+
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var chartGlobal = echarts.init(document.getElementById('chartGlobal'));
+
+            var optionGlobal = {
+                title: {
+                    text: 'Taux d\'électrification global'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['Taux d\'accès par ménage', 'Taux de couverture par village']
+                },
+                yAxis: {
+                    type: 'value',
+                    name: 'Taux (%)'
+                },
+                series: [{
+                    name: 'Taux d\'électrification',
+                    type: 'bar',
+                    data: [
+        @Model.TauxAccesGlobalParMenage.ToString("F2"),
+        @Model.TauxCouvertureGlobalParVillage.ToString("F2")
+                                    ]
+                }]
+            };
+
+            chartGlobal.setOption(optionGlobal);
+        });
+    </script>
+}

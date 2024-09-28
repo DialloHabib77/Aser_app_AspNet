@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\controllers\\communescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:controllers\\communescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\departements\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\departements\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\regions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\regions\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\recensements\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\recensements\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\departements\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\departements\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\communes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\communes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\villages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\villages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\views\\regions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:views\\regions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\controllers\\recensementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:controllers\\recensementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\models\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:models\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\models\\recensement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:models\\recensement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\controllers\\villagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:controllers\\villagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\models\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:models\\departement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\controllers\\departementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:controllers\\departementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|c:\\users\\msi\\source\\repos\\aser_electrification\\models\\commune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F810F83-E517-45B8-8998-7A6283B2FC0D}|aser_electrification.csproj|solutionrelative:models\\commune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegionsController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "Controllers\\RegionsController.cs",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAIsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T18:26:18.236Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Villages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Villages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Villages\\Index.cshtml",
+              "RelativeToolTip": "Views\\Villages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T19:33:45.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Departements\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departements\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Departements\\Create.cshtml",
+              "RelativeToolTip": "Views\\Departements\\Create.cshtml",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T19:33:04.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Departements\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Departements\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Departements\\Index.cshtml",
+              "RelativeToolTip": "Views\\Departements\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T19:32:33.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Communes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Communes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Communes\\Index.cshtml",
+              "RelativeToolTip": "Views\\Communes\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T19:16:07.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Village.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Village.cs",
+              "RelativeDocumentMoniker": "Models\\Village.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Village.cs",
+              "RelativeToolTip": "Models\\Village.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T18:18:26.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Regions\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Regions\\Create.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Regions\\Create.cshtml",
+              "RelativeToolTip": "Views\\Regions\\Create.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T15:59:27.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Regions\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Regions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Regions\\Index.cshtml",
+              "RelativeToolTip": "Views\\Regions\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA8AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T15:06:37.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Recensements\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Recensements\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Views\\Recensements\\Index.cshtml",
+              "RelativeToolTip": "Views\\Recensements\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABEAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T13:12:28.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommunesController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\CommunesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommunesController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\CommunesController.cs",
+              "RelativeToolTip": "Controllers\\CommunesController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAAAF8AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T12:52:35.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VillagesController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\VillagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VillagesController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\VillagesController.cs",
+              "RelativeToolTip": "Controllers\\VillagesController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAAAGIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:37:13.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RecensementsController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\RecensementsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RecensementsController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\RecensementsController.cs",
+              "RelativeToolTip": "Controllers\\RecensementsController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAE8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:36:22.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepartementsController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\DepartementsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartementsController.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Controllers\\DepartementsController.cs",
+              "RelativeToolTip": "Controllers\\DepartementsController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAAHgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:24:15.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Commune.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Commune.cs",
+              "RelativeDocumentMoniker": "Models\\Commune.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Commune.cs",
+              "RelativeToolTip": "Models\\Commune.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:08:24.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Departement.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Departement.cs",
+              "RelativeDocumentMoniker": "Models\\Departement.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Departement.cs",
+              "RelativeToolTip": "Models\\Departement.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:07:59.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Recensement.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Recensement.cs",
+              "RelativeDocumentMoniker": "Models\\Recensement.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Recensement.cs",
+              "RelativeToolTip": "Models\\Recensement.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:07:53.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Region.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Region.cs",
+              "RelativeDocumentMoniker": "Models\\Region.cs",
+              "ToolTip": "C:\\Users\\MSI\\source\\repos\\aser_electrification\\Models\\Region.cs",
+              "RelativeToolTip": "Models\\Region.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:07:32.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

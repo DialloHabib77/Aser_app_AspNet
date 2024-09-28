@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\aser_electrification.props" />
+</Project>

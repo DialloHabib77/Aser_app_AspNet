@@ -1,0 +1,43 @@
+﻿@model aser_electrification.Models.Commune
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<hr />
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="card">
+                <div class="card-header text-white bg-purple-light">Gestion des Communes</div>
+                <div class="card-body">
+                    <h4 class="mb-4">Formulaire de Création d'une Commune</h4>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Nom_Commune" class="control-label">Nom de la Commune</label>
+                        <input asp-for="Nom_Commune" class="form-control" placeholder="Entrez le nom de la commune" />
+                        <span asp-validation-for="Nom_Commune" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="ID_Departement" class="control-label">Sélectionner le Département</label>
+                        <select asp-for="ID_Departement" class="form-control" asp-items="ViewBag.Departement"></select>
+                        <span asp-validation-for="ID_Departement" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <input type="submit" value="Créer" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-danger"><i class="fas fa-backspace"></i> Retourner à la liste</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

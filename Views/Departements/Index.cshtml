@@ -1,0 +1,50 @@
+﻿@model IEnumerable<aser_electrification.Models.Departement>
+
+@{
+    ViewData["Title"] = "Index";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurentPage;
+    }
+}
+
+<div>
+    <div class="d-flex mb-2">
+        <h5 class="card-title flex-grow-1">Liste des départements</h5>
+        <div class="d-flex">
+            <a class="btn btn-success btn-sm" asp-action="Create"><i class="fas fa-user-plus"></i> Ajouter un nouveau département</a>
+            <input disabled type="text" class="form-control ms-2" placeholder="Rechercher..." />
+        </div>
+    </div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Nom Département</th>
+                <th class="text-center">Nom Région</th>
+                <th class="text-center">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Nom_Departement)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Region.Nom_Region)
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.ID_Departement" class="btn btn-sm btn-warning me-2"><i class="fas fa-edit"></i> Modifier</a>
+                        <a asp-action="Details" asp-route-id="@item.ID_Departement" class="btn btn-sm btn-info me-2"><i class="fas fa-info-circle"></i> Détails</a>
+                        <a asp-action="Delete" asp-route-id="@item.ID_Departement" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Supprimer</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <partial name="_pagerDep" model="@pager" />
+</div>
